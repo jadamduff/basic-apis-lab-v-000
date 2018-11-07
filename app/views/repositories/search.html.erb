@@ -5,7 +5,11 @@
   <%= submit_tag "Search Github!" %>
   <div>
     <% if @repos %>
-      <%= @repos %>
+      <% @repos each do |repo| %>
+        <div>
+          
+        </div>
+      <% end %>
     <% end %>
   </div>
 <% end %>
