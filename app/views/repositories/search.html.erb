@@ -4,8 +4,8 @@
   <%= text_field_tag :query %>
   <%= submit_tag "Search Github!" %>
   <div>
-    <% if @request %>
-      <%= @request.body %>
+    <% if @repos %>
+      <%= @repos %>
     <% end %>
   </div>
 <% end %>
