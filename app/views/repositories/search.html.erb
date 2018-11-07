@@ -8,7 +8,7 @@
       <% @repos.each do |repo| %>
         <p>
           <%= repo['name'] %><br />
-          <%= link_to repo['html_url'] %><br />
+          <%= link_to repo['html_url'], repo['html_url'] %><br />
           <%= repo['description'] %>
         </p>
       <% end %>
