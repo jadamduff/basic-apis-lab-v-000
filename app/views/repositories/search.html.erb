@@ -7,7 +7,7 @@
     <% if @repos %>
       <% @repos each do |repo| %>
         <div>
-          
+          <%= link_to repo['html_url'] %>
         </div>
       <% end %>
     <% end %>
