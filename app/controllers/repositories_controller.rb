@@ -12,6 +12,7 @@ class RepositoriesController < ApplicationController
     end
 
     body_hash = JSON.parse(@response.body)
+    @repos = body_hash['items']
     render 'search'
   end
 end
